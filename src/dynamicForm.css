@@ -1,0 +1,125 @@
+
+
+.div {
+    /* background-image: url("pic.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* template sttyle */
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+    background-color: black;
+    opacity: 0.5;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+form {
+    width: 40%;
+    margin: 0px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 {
+    width: 100%;
+    margin: 0px auto;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    /* animation-name: tide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: linear; */
+}
+
+@keyframes tide {
+    /* 0% {
+        transform: translateX(-100%);
+        transform: translateX(50%);
+    } */
+    /* 50% {
+        opacity: 0;
+    } */
+    /* 100% {
+        transform: translateX(50%);
+        transform: translateX(-100%);
+    } */
+}
+
+label {
+    display: block;
+    color: white;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.4s ease-in-out 0.0s;
+    color: black;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+input:hover {
+    /* border: 5px solid teal; */
+    box-shadow: 2px 2px 5px 5px teal;
+}
+
+select {
+    width: 100%;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    background-color: teal;
+}
+
+#option1 {
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+    transition: background-color 0.5s ease-in-out 0.1s;
+}
+
+button:hover {
+    background-color: teal;
+    color: #fff;
+    box-shadow: 2px 2px 5px 5px rgb(133, 130, 130);
+}
