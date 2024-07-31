@@ -8,6 +8,7 @@ const DynamicForm = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [visible, setVisible] = useState(false);
 
     // set state for error validation
     const [errors, setErrors] = useState({});
@@ -62,14 +63,14 @@ const DynamicForm = () => {
         </div>
 
         <div>
-            <label>Password</label>
-            <input type="number" placeholder="enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+            <label htmlFor='password'>Password</label>
+            <input type={visible ? "text" : "password"} placeholder="enter your password" value={password} onChange={(e) => setPassword(e.target.value)} required />
             {errors.password && <p>{errors.password}</p>}
         </div>
 
         <div>
-            <label>Confirm Password</label>
-            <input type="number" placeholder="confirm password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+            <label htmlFor='password'>Confirm Password</label>
+            <input type={visible ? "text" : "password"} placeholder="confirm password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
             {errors.confirmPassword && <p>{errors.confirmPassword}</p>}
         </div>
 
@@ -80,4 +81,4 @@ const DynamicForm = () => {
   )
 }
 
-export default DynamicForm
+export default DynamicForm;
